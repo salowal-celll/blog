@@ -1,4 +1,4 @@
-@import '@salowal/ui/styles';
+/* Blog-specific styles - base styles imported in layout.tsx */
 
 /* Blog Header */
 .blog-header {
