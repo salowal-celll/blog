@@ -1,0 +1,42 @@
+backend:
+  name: git-gateway
+  branch: main
+
+# Enable Netlify Identity
+local_backend: true
+
+# Media files storage
+media_folder: "public/images/uploads"
+public_folder: "/images/uploads"
+
+# Site URL
+site_url: https://blog.salowal.com
+display_url: https://blog.salowal.com
+
+# Editorial workflow for drafts
+publish_mode: editorial_workflow
+
+# Collections
+collections:
+  - name: "blog"
+    label: "Blog Posts"
+    folder: "content/blog"
+    create: true
+    slug: "{{slug}}"
+    fields:
+      - { label: "Title", name: "title", widget: "string" }
+      - { label: "Publish Date", name: "date", widget: "datetime" }
+      - { label: "Author", name: "author", widget: "string", default: "Salowal Team" }
+      - label: "Category"
+        name: "category"
+        widget: "select"
+        options:
+          - "Therapy"
+          - "EDI"
+          - "Wellbeing"
+          - "Workplace"
+          - "Mental Health"
+          - "Resources"
+      - { label: "Excerpt", name: "excerpt", widget: "text" }
+      - { label: "Featured Image", name: "thumbnail", widget: "image", required: false }
+      - { label: "Body", name: "body", widget: "markdown" }
