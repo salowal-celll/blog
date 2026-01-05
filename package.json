@@ -9,7 +9,6 @@
         "lint": "next lint"
     },
     "dependencies": {
-        "@salowal/ui": "*",
         "gray-matter": "^4.0.3",
         "next": "^14.0.0",
         "react": "^18.2.0",

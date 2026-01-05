@@ -5,6 +5,9 @@ node_modules
 .next/
 out/
 
+# Netlify
+.netlify/
+
 # Misc
 .DS_Store
 *.pem
@@ -18,3 +21,4 @@ npm-debug.log*
 
 # Turbo
 .turbo
+

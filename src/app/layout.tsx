@@ -1,10 +1,10 @@
 import type { Metadata, Viewport } from 'next';
 import { Inter } from 'next/font/google';
-import Link from 'next/link';
 import Script from 'next/script';
-import '@salowal/ui/styles';
+import { Header } from '../components/Header';
+import { Footer } from '../components/Footer';
+import '../styles/globals.css';
 import './globals.css';
-import { BlogHeader } from './BlogHeader';
 
 const inter = Inter({
     subsets: ['latin'],
@@ -13,7 +13,7 @@ const inter = Inter({
 });
 
 export const metadata: Metadata = {
-    metadataBase: new URL('https://blog.salowal.com'),
+    metadataBase: new URL('https://salowal-blog.netlify.app'),
     title: {
         default: 'Salowal Blog | Mental Health, EDI & Workplace Wellbeing',
         template: '%s | Salowal Blog',
@@ -30,11 +30,11 @@ export const metadata: Metadata = {
     openGraph: {
         type: 'website',
         locale: 'en_GB',
-        url: 'https://blog.salowal.com',
+        url: 'https://salowal-blog.netlify.app',
         siteName: 'Salowal Blog',
     },
     alternates: {
-        canonical: 'https://blog.salowal.com',
+        canonical: 'https://salowal-blog.netlify.app',
     },
 };
 
@@ -52,18 +52,9 @@ export default function BlogLayout({
     return (
         <html lang="en" className={inter.variable}>
             <body>
-                <BlogHeader />
+                <Header variant="blog" />
                 <main>{children}</main>
-                <footer className="blog-footer">
-                    <div className="container">
-                        <p>© {new Date().getFullYear()} Salowal Ltd. All rights reserved.</p>
-                        <nav>
-                            <Link href="https://salowal.com">Main Website</Link>
-                            <Link href="https://salowal.com/therapy">Therapy</Link>
-                            <Link href="https://salowal.com/contact">Contact</Link>
-                        </nav>
-                    </div>
-                </footer>
+                <Footer variant="main" />
 
                 {/* Tidio Live Chat */}
                 <Script

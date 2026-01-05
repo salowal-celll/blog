@@ -2,6 +2,7 @@ import type { Metadata } from 'next';
 import Link from 'next/link';
 import { notFound } from 'next/navigation';
 import { getPostBySlug, getAllPostSlugs, formatDate } from '@/lib/posts';
+import { BookConsultationCTA } from '@/components/BookConsultationCTA';
 
 interface PageProps {
     params: Promise<{ slug: string }>;
@@ -73,6 +74,12 @@ export default async function PostPage({ params }: PageProps) {
                     </div>
                 )}
             </article>
+
+            {/* Book Consultation CTA after every post */}
+            <div className="container">
+                <BookConsultationCTA />
+            </div>
         </>
     );
 }
+
