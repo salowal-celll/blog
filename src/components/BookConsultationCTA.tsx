@@ -7,7 +7,7 @@ export function BookConsultationCTA() {
             <div className={styles.ctaInner}>
                 <div className={styles.ctaContent}>
                     <h3>Ready to Start Your Journey?</h3>
-                    <p>Book a free 15-minute consultation to discuss how therapy can help you.</p>
+                    <p>Book a free 20-minute consultation to discuss how therapy can help you.</p>
                 </div>
                 <Link href="https://salowal.com/contact" className="btn btn-primary btn-lg">
                     Book Free Consultation

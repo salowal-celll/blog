@@ -1,5 +1,11 @@
 /* Blog-specific styles - base styles imported in layout.tsx */
 
+/* Padding for fixed header */
+body {
+    padding-top: 80px;
+}
+
+
 /* Blog Header */
 .blog-header {
     position: sticky;

@@ -56,6 +56,20 @@ export default function BlogLayout({
                 <main>{children}</main>
                 <Footer variant="main" />
 
+                {/* Salowal Blog Google Analytics (G-T4J7GFNEDX) */}
+                <Script
+                    src="https://www.googletagmanager.com/gtag/js?id=G-T4J7GFNEDX"
+                    strategy="afterInteractive"
+                />
+                <Script id="google-analytics-blog" strategy="afterInteractive">
+                    {`
+                        window.dataLayer = window.dataLayer || [];
+                        function gtag(){dataLayer.push(arguments);}
+                        gtag('js', new Date());
+                        gtag('config', 'G-T4J7GFNEDX');
+                    `}
+                </Script>
+
                 {/* Tidio Live Chat */}
                 <Script
                     src="//code.tidio.co/zlq59oinmnngpzpuutlhetnf5nty4reg.js"

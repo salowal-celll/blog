@@ -141,7 +141,7 @@ export function Footer({
             <div className={styles.footerBottom}>
                 <div className={styles.footerInner}>
                     <div className={styles.copyright}>
-                        © {currentYear} {companyName} Ltd. All rights reserved.
+                        © {currentYear} {companyName} Ltd. All rights reserved. | Registered in England & Wales · Co. No. 13402620
                     </div>
                     <div className={styles.legal}>
                         <Link href="/privacy">Privacy Policy</Link>
