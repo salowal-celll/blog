@@ -1,4 +1,3 @@
-import { Container } from '@salowal/ui';
 import type { Metadata } from 'next';
 
 export const metadata: Metadata = {
@@ -9,7 +8,7 @@ export const metadata: Metadata = {
 export default function PrivacyPage() {
     return (
         <section className="section-white" style={{ paddingTop: '6rem', paddingBottom: '4rem' }}>
-            <Container>
+            <div className="container">
                 <div style={{ maxWidth: '780px', margin: '0 auto' }}>
                     <h1>Privacy Policy</h1>
                     <p style={{ color: 'var(--text-light)', marginBottom: '2rem' }}>
@@ -121,7 +120,7 @@ export default function PrivacyPage() {
                         at <a href="https://ico.org.uk" target="_blank" rel="noopener noreferrer">ico.org.uk</a>.
                     </p>
                 </div>
-            </Container>
+            </div>
         </section>
     );
 }

@@ -1,4 +1,3 @@
-import { Container } from '@salowal/ui';
 import type { Metadata } from 'next';
 
 export const metadata: Metadata = {
@@ -9,7 +8,7 @@ export const metadata: Metadata = {
 export default function TermsPage() {
     return (
         <section className="section-white" style={{ paddingTop: '6rem', paddingBottom: '4rem' }}>
-            <Container>
+            <div className="container">
                 <div style={{ maxWidth: '780px', margin: '0 auto' }}>
                     <h1>Terms of Service</h1>
                     <p style={{ color: 'var(--text-light)', marginBottom: '2rem' }}>
@@ -107,7 +106,7 @@ export default function TermsPage() {
                         <li><strong>Company:</strong> Salowal Limited, Company No. 13402620, registered in England and Wales.</li>
                     </ul>
                 </div>
-            </Container>
+            </div>
         </section>
     );
 }
